@@ -1,0 +1,59 @@
+.Post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+        
+        width: 20rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        -webkit-box-shadow: 1px 5px 10px 0px rgb(109, 240, 131);
+        -moz-box-shadow: 1px 5px 10px 0px rgb(109, 240, 131);
+        box-shadow: 1px 5px 10px 0px rgb(109, 240, 131);
+
+        h1{
+            color: black;
+            align-self: center;
+            margin-bottom: 1rem;
+        }
+
+        .input__box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+
+            label {
+                font-size: 1rem;
+                margin-bottom: 2px;
+                text-transform: capitalize;
+                color: black;
+              }
+            
+              input {
+                border: 1px solid black;
+                height: 2rem;
+              }
+        }
+
+        button{
+            align-self: center;
+            border: none;
+            background-color: rgb(109, 240, 131);
+            padding: .5rem 1rem;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 20px;
+            margin-bottom: .5rem;
+            cursor: pointer;
+        }
+
+        p{
+            align-self: center;
+        }
+    }
+}

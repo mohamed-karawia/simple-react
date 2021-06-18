@@ -1,0 +1,50 @@
+$primary-color: rgb(109, 240, 131);
+
+.Fetch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .search{
+        margin-bottom: .5rem;
+
+        label{
+            font-size: 1.2rem;
+        }
+
+        input{
+            border-radius: 5rem;
+            height: 2rem;
+            border: 1px solid $primary-color;
+            box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.384);
+            padding: 0 1rem;
+
+        }
+    }
+
+    table{
+        width: 70%;
+        -webkit-box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.384);
+        -moz-box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.384);
+        box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.384);
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-transform: capitalize;
+    }
+
+    & tr:nth-child(even){background-color:#f2f2f2}
+
+    tr:hover {background-color: #ddd;}
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: $primary-color;
+        color: white;
+      }
+}

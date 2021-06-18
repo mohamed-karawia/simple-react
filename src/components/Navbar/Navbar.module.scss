@@ -1,0 +1,24 @@
+.Navbar{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    margin-bottom: 4rem;
+    
+    
+    width: 100vw;
+    background-color: rgb(109, 240, 131);
+
+    &__link{
+
+
+        a{
+            color: white;
+            margin-right: 4rem;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+}
