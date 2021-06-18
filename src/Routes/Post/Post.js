@@ -19,7 +19,7 @@ const Post = () => {
         setLoading(true)
         const form = {
             "orgMSP":"Org1MSP",
-            "userId":"varmaa",
+            "userId":"varma",
             "channelName":"mychannel",
             "chaincodeName":"basic",
             "data":{
@@ -35,15 +35,27 @@ const Post = () => {
         axios.post('http://3.91.156.182:4000/tx', form)
         .then(response => {
             setLoading(false);
-            setRespone('Posted Successfully!')
-            console.log(response)
+            if(response.data === ""){
+                setRespone('Posted Successfully!')
+            }else{
+                setRespone('ID must be unique, please try again')
+            }
+            clearData();
         })
         .catch(error => {
             setLoading(false);
             setRespone('Error! please try again')
-            console.log(error.response)
+            clearData();
         })
     };
+
+    const clearData = () => {
+        setId('');
+        setName('');
+        setPeriod('');
+        setOrganization('');
+        setValue('');
+    }
 
 
     return (
